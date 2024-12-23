@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Апелляция беру формасы</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Апелляция беру формасы</h1>
+        <!-- Вставляем ваш URL для отправки формы -->
+        <form id="appealForm" action="https://formspree.io/f/xovvqbza" method="POST">
+            <label for="fullname">Тегі, аты, әкесінің аты:</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="class">Сынып:</label>
+            <select id="class" name="class" required>
+                <option value="10">10</option>
+                <option value="11">11</option>
+            </select>
+
+            <label for="tour">Тур:</label>
+            <select id="tour" name="tour" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+
+            <label for="variant">Нұсқа:</label>
+            <select id="variant" name="variant" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
+            <label for="taskNumber">Тапсырма нөмірі:</label>
+            <select id="taskNumber" name="taskNumber" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+
+            <label for="reason">Себебі:</label>
+            <textarea id="reason" name="reason" rows="3" required></textarea>
+
+            <button type="submit">Апелляцияны жіберу</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
